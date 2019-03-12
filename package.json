@@ -1,0 +1,14 @@
+{
+  "name": "jwtapi",
+  "version": "1.0.0",
+  "description": "A package to test an api using JWT",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "jwt"
+  ],
+  "author": "Ovidio R. Calvet",
+  "license": "MIT"
+}
