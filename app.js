@@ -13,8 +13,8 @@ app.get('/private', (req, res) => {
     res.json({ visible: 'Only you can see it' });
 });
 
-app.get('/private', (req, res) => {
-    res.json({ visible: 'Only you can see it' });
+app.get('/private/role', (req, res) => {
+    res.json({ visible: 'Only you with role can see it' });
 });
 
 app.listen(3080, () => {
