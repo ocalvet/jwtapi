@@ -4,7 +4,8 @@
   "description": "A package to test an api using JWT",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "start": "node app.js"
   },
   "keywords": [
     "jwt"
