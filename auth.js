@@ -2,7 +2,7 @@ const jwt = require("jsonwebtoken");
 const config = require("./config.js");
 
 const checkToken = (req, res, next) => {
-  const token = req.headers["x-access-token"] || req.headers["authorization"]; // Express headers are auto converted to lowercase
+  let token = req.headers["x-access-token"] || req.headers["authorization"]; // Express headers are auto converted to lowercase
   if (token && token.startsWith("Bearer ")) {
     token = token.slice(7, token.length);
   } else {
