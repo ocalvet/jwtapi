@@ -2,16 +2,17 @@ GET http://localhost:3080
 
 ###
 POST http://localhost:3080/login
+Content-Type: application/json
 
 {
-    "username": "test@user.com",
-    "password": "testPass123"
+    "username": "test0@email.com",
+    "password": "pass123"
 }
 
 ###
 GET http://localhost:3080/private
-Authorization: Bearer sadsadasdsadkl
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiIxIiwibmFtZSI6IlRlc3QwIExhc3RuYW1lIiwiZW1haWwiOiJ0ZXN0MEBlbWFpbC5jb20iLCJwYXNzd29yZCI6InBhc3MxMjMiLCJyb2xlcyI6WyJhZG1pbiJdLCJpYXQiOjE1NTI2MTAyMjUsImV4cCI6MTU1MjY5NjYyNX0.B-ZYieLaX-nK8ESlaGXcR5wfTRggdmEn_86jW2LJJ98
 
 ###
 GET http://localhost:3080/private/role
-Authorization: Bearer sadsadasdsadkl
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiIxIiwibmFtZSI6IlRlc3QwIExhc3RuYW1lIiwiZW1haWwiOiJ0ZXN0MEBlbWFpbC5jb20iLCJwYXNzd29yZCI6InBhc3MxMjMiLCJyb2xlcyI6WyJhZG1pbiJdLCJpYXQiOjE1NTI2MTAyMjUsImV4cCI6MTU1MjY5NjYyNX0.B-ZYieLaX-nK8ESlaGXcR5wfTRggdmEn_86jW2LJJ98
