@@ -1,0 +1,17 @@
+GET http://localhost:3080
+
+###
+POST http://localhost:3080/login
+
+{
+    "username": "test@user.com",
+    "password": "testPass123"
+}
+
+###
+GET http://localhost:3080/private
+Authorization: Bearer sadsadasdsadkl
+
+###
+GET http://localhost:3080/private/role
+Authorization: Bearer sadsadasdsadkl
