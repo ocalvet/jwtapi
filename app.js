@@ -27,7 +27,7 @@ app.get("/public", (req, res) => {
 app.post("/login", (req, res) => {
   const { username, password } = req.body;
   const user = users.find(u => u.email === username && u.password === password);
-  console.log(user, req.body);
+  // console.log(user, req.body);
   if (user) {
     const token = auth.sign(user);
     res.json({ token });
@@ -46,5 +46,5 @@ app.get("/private/role", auth.checkToken, (req, res) => {
 });
 
 app.listen(config.port, () => {
-  console.log(`Listening on ${config.port}`);
+  // console.log(`Listening on ${config.port}`);
 });
