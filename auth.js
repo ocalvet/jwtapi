@@ -13,7 +13,7 @@ const getTokenFromRequest = req => {
 
 const checkToken = (req, res, next) => {
   try {
-    const token = this.getTokenFromRequest(req);
+    const token = getTokenFromRequest(req);
     jwt.verify(token, config.secret, (err, decoded) => {
       if (err) {
         res.status(401);
